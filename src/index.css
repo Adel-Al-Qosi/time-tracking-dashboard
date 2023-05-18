@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@700&family=DynaPuff:wght@700&family=Kumbh+Sans:wght@400;700&family=Rubik:ital,wght@1,300&display=swap");
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* width */
+  --mobile-width: 23.4375rem;
+  --desktop-width: 90rem;
+
+  /* Primary colors */
+  --clr-blue: hsl(246, 80%, 60%);
+  --clr-light-red--work: hsl(15, 100%, 70%);
+  --clr-soft-blue--play: hsl(195, 74%, 62%);
+  --clr-light-red--study: hsl(348, 100%, 68%);
+  --clr-lime-green--exercise: hsl(145, 58%, 55%);
+  --clr-violet--social: hsl(264, 64%, 52%);
+  --clr-soft-orange--self-care: hsl(43, 84%, 65%);
+
+  /* Neutral colors */
+  --clr-very-dark-blue: hsl(226, 43%, 10%);
+  --clr-dark-blue: hsl(235, 46%, 20%);
+  --clr-desaturated-blue: hsl(235, 45%, 61%);
+  --clr-plate-blue: hsl(236, 100%, 87%);
+
+  --clr-white: #fff;
+
+  /* Typography */
+
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+
+  --ff-rubik: "Rubik", sans-serif;
+
+  --fw-thinner: 300;
+  --fw-normal: 400;
+  --fw-bolder: 500;
+}
+
+@media (min-width: 35em) {
+  :root {
+    --fs-800: 5rem;
+    --fs-700: 2.5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+  }
+}
+
+@media (min-width: 45em) {
+  :root {
+    /* font-sizes */
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+  }
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: var(--ff-rubik);
+  font-size: var(--fs-400);
+  color: var(--clr-white);
+  background-color: var(--clr-very-dark-blue);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/* background colors */
+
+.bg-primary {
+  background-color: var(--clr-blue);
+}
+
+.bg-work {
+  background-color: var(--clr-light-red--work);
+}
+
+.bg-play {
+  background-color: var(--clr-soft-blue--play);
+}
+
+.bg-study {
+  background-color: var(--clr-light-red--study);
+}
+
+.bg-exercise {
+  background-color: var(--clr-lime-green--exercise);
+}
+
+.bg-social {
+  background-color: var(--clr-violet--social);
+}
+
+.bg-self-care {
+  background-color: var(--clr-soft-orange--self-care);
+}
+
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+.user {
+  position: relative;
+  height: 13rem;
+  border: 2px solid red;
+}
+
+.user-time-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.user-info {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.user-info img {
+  width: 2.5rem;
+  border: 2px solid var(--clr-white);
+  border-radius: 50%;
+}
+
+.card {
+  border: 2px solid green;
+}
+
+.info-card {
+  margin: 1rem;
+}
+
+.info-card--1st {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user--timeframe {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.user--timeframe li {
+  cursor: pointer;
+  list-style: none;
+}
