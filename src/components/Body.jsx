@@ -8,7 +8,7 @@ function Body() {
     const [timeframe, setTimeframe] = useState('daily')
     return (
         
-        <main>
+        <main className="container">
             <User setTimeframe={setTimeframe}/>
             {data.map((object, i) => {
                 return <Card key={i} object={object} timeframe={timeframe} />
