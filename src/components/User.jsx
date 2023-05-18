@@ -11,7 +11,7 @@ function User({ setTimeframe }) {
         </ul>
       </nav>
       <div className="user-info bg-primary">
-        <img src={userPhoto} alt="User photo" />
+        <img src={userPhoto} alt="User" />
         <div>
           <p>Report for</p>
           <h1>Jeremy Robson</h1>
