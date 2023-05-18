@@ -138,36 +138,6 @@ select {
   border: 0;
 }
 
-/* background colors */
-
-.bg-primary {
-  background-color: var(--clr-blue);
-}
-
-.bg-work {
-  background-color: var(--clr-light-red--work);
-}
-
-.bg-play {
-  background-color: var(--clr-soft-blue--play);
-}
-
-.bg-study {
-  background-color: var(--clr-light-red--study);
-}
-
-.bg-exercise {
-  background-color: var(--clr-lime-green--exercise);
-}
-
-.bg-social {
-  background-color: var(--clr-violet--social);
-}
-
-.bg-self-care {
-  background-color: var(--clr-soft-orange--self-care);
-}
-
 /* ------------------- */
 /* Compontents         */
 /* ------------------- */
@@ -183,6 +153,7 @@ select {
   margin-inline: auto;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  
 }
 
 .user-time-nav {
@@ -205,6 +176,7 @@ select {
   align-items: center;
   height: 10rem;
   border-radius: 1rem;
+  background-color: var(--clr-blue);
 }
 
 .user-info img {
@@ -230,7 +202,6 @@ select {
 .color-card {
   position: absolute;
   top: 0;
-  background-color: rgb(255, 0, 0);
   height: 13rem;
   width: 100%;
   border-radius: 1rem;
@@ -268,5 +239,26 @@ select {
   list-style: none;
 }
 
-.color-card {
+.Work {
+  background-color: var(--clr-light-red--work)
+}
+
+.Play {
+  background-color: var(--clr-soft-blue--play);
+}
+
+.Study {
+  background-color: var(--clr-light-red--study);
+}
+
+.Exercise {
+  background-color: var(--clr-lime-green--exercise);
+}
+
+.Social {
+  background-color: var(--clr-violet--social);
+}
+
+.Self {
+  background-color: var(--clr-soft-orange--self-care);
 }

@@ -10,7 +10,7 @@ function User({ setTimeframe }) {
           <li onClick={() => setTimeframe('monthly')}>Monthly</li>
         </ul>
       </nav>
-      <div className="user-info bg-primary">
+      <div className="user-info">
         <img src={userPhoto} alt="User" />
         <div>
           <p>Report for</p>
