@@ -1,6 +1,6 @@
 import userPhoto from "../images/image-jeremy.png";
 
-function User({setTimeframe}) {
+function User({ setTimeframe }) {
   return (
     <div className="user">
       <nav className="user-time-nav">
@@ -11,7 +11,7 @@ function User({setTimeframe}) {
         </ul>
       </nav>
       <div className="user-info bg-primary">
-        <img src={userPhoto} alt="user-photo" />
+        <img src={userPhoto} alt="User photo" />
         <div>
           <p>Report for</p>
           <h1>Jeremy Robson</h1>
