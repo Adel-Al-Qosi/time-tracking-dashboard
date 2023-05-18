@@ -11,11 +11,13 @@ function Card({ object, timeframe }) {
   }, [timeframe]);
 
   return (
-    <div className={"card " + {timeframe}}>
-      <div className="color-card"></div>
+    <div className={"card"}>
+      <div className={`color-card ${object.title}`}>
+        
+      </div>
       <div className="info-card">
         <div className="info-card--1st">
-          <h2>{object["title"]}</h2>
+          <h2>{object.title}</h2>
           <img src={dots} alt="dots" />
         </div>
         <div className="info-card--current">
