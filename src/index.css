@@ -328,7 +328,7 @@ select {
     grid-template-areas: 
     'user card card card'
     'user card card card';
-    margin: 0;
+    margin: 2rem;
     padding: 0;
     margin-block: 0;
     height: 29rem;
