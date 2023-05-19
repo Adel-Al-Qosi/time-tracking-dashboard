@@ -4,7 +4,7 @@ function User({ timeframe, setTimeframe }) {
   return (
     <div className="user">
       <nav className="user-time-nav">
-        <ul className="user--timeframe">
+        <ul className="user--timeframe fw-bolder">
           <li className={timeframe === 'daily' ? 'active' : ''} onClick={() => setTimeframe('daily')}>Daily</li>
           <li className={timeframe === 'weekly' ? 'active' : ''} onClick={() => setTimeframe('weekly')}>Weekly</li>
           <li className={timeframe === 'monthly' ? 'active' : ''} onClick={() => setTimeframe('monthly')}>Monthly</li>

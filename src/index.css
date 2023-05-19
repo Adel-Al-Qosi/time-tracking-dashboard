@@ -93,6 +93,8 @@ body {
   background-color: var(--clr-very-dark-blue);
   line-height: 1.5;
   min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 /* make images easier to work with */
@@ -203,7 +205,7 @@ select {
   top: 0;
   height: 13rem;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 2rem 2rem;
 }
 
 .info-card {
@@ -311,4 +313,83 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+@media (min-width: 45em) {
+  .container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'user card card card'
+    'user card card card';
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+    height: 29rem;
+  }
+
+  .user {
+    grid-area: user;
+    width: 15rem;
+    height: 28rem;
+  }
+
+  .user-info {
+    height: 20rem;
+    display: grid;
+    padding: 2rem;
+  }
+
+  .user--timeframe {
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 2rem;
+    
+  }
+
+  .cards-container {
+    grid-area: card;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap:2rem;
+    row-gap: 0;
+  }
+
+  .card {
+    width: 15rem;
+
+  }
+
+  .info-card {
+    padding: 0;
+    padding-inline: 2rem;
+    padding-top: 1rem;
+    margin-block: 1rem;
+  }
+
+  .info-card:hover {
+    background-color: var(--clr-desaturated-blue);
+  }
+
+  .info-card:hover button {
+    background-color: var(--clr-desaturated-blue);
+  }
+
+  .info-card--times {
+    display: grid;
+    margin: 0;
+    padding: 0;
+  }
+
+  .info-card--previous {
+    padding: 0;
+    margin: 0;
+    
+  }
 }
