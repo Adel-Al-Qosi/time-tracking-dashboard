@@ -184,7 +184,8 @@ select {
   width: 4rem;
   border: 2px solid var(--clr-white);
   border-radius: 50%;
-  margin-right: 2rem;
+  margin-inline: 1rem;
+
 }
 
 .cards-container {
@@ -339,6 +340,10 @@ select {
     grid-area: user;
     width: 15rem;
     height: 28rem;
+  }
+
+  .user img {
+    margin-inline: 0;
   }
 
   .user-info {
