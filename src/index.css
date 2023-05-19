@@ -153,7 +153,6 @@ select {
   margin-inline: auto;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  
 }
 
 .user-time-nav {
@@ -177,7 +176,6 @@ select {
   height: 10rem;
   border-radius: 1rem;
   background-color: var(--clr-blue);
-  
 }
 
 .user-info img {
@@ -206,7 +204,6 @@ select {
   height: 13rem;
   width: 100%;
   border-radius: 1rem;
-  
 }
 
 .info-card {
@@ -233,11 +230,11 @@ select {
 }
 
 .info-card--current {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 .info-card--previous {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   margin-top: 1.6rem;
 }
 
@@ -253,7 +250,6 @@ select {
   cursor: pointer;
   list-style: none;
   font-weight: var(--fw-bolder);
-  
 }
 
 .user--timeframe li:not(.active) {
@@ -268,42 +264,42 @@ select {
   background-color: var(--clr-light-red--work);
   background-image: url(./images/icon-work.svg);
   background-repeat: no-repeat;
-  background-position: right 1rem top -.3rem
+  background-position: right 1rem top -0.3rem;
 }
 
 .Play {
   background-color: var(--clr-soft-blue--play);
   background-image: url(./images/icon-play.svg);
   background-repeat: no-repeat;
-  background-position: right 1rem top -.3rem
+  background-position: right 1rem top -0.3rem;
 }
 
 .Study {
   background-color: var(--clr-light-red--study);
   background-image: url(./images/icon-study.svg);
   background-repeat: no-repeat;
-  background-position: right 1rem top -.3rem
+  background-position: right 1rem top -0.3rem;
 }
 
 .Exercise {
   background-color: var(--clr-lime-green--exercise);
   background-image: url(./images/icon-exercise.svg);
   background-repeat: no-repeat;
-  background-position: right 1rem top -.3rem
+  background-position: right 1rem top -0.3rem;
 }
 
 .Social {
   background-color: var(--clr-violet--social);
   background-image: url(./images/icon-social.svg);
   background-repeat: no-repeat;
-  background-position: right 1rem top -.3rem
+  background-position: right 1rem top -0.3rem;
 }
 
 .Self {
   background-color: var(--clr-soft-orange--self-care);
   background-image: url(./images/icon-self-care.svg);
   background-repeat: no-repeat;
-  background-position: right 1rem top -0.3rem
+  background-position: right 1rem top -0.3rem;
 }
 
 .btn-dots {

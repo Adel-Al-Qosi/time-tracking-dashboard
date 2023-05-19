@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import dots from "../images/icon-ellipsis.svg";
 
 function Card({ object, timeframe }) {
   const [newTimeframe, setNewTimeframe] = useState("Day");
