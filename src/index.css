@@ -373,7 +373,7 @@ select {
 
   .card {
     width: 15rem;
-
+    padding-inline: 2rem;
   }
 
   .info-card {
