@@ -93,7 +93,7 @@ body {
   background-color: var(--clr-very-dark-blue);
   line-height: 1.5;
   min-height: 100vh;
-  display: grid;
+  
   place-content: center;
 }
 
@@ -315,7 +315,11 @@ select {
   cursor: pointer;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 66em) {
+  body {
+    display: grid;
+  }
+
   .container {
     display: grid;
     gap: 2rem;
@@ -357,7 +361,7 @@ select {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap:2rem;
+    column-gap: 2rem;
     row-gap: 0;
   }
 
