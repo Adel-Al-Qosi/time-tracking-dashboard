@@ -212,6 +212,7 @@ select {
   position: absolute;
   bottom: 0;
   padding: 2rem;
+  padding-inline: 2rem;
   margin-block: 1rem;
   background-color: var(--clr-dark-blue);
   border-radius: 1rem;
