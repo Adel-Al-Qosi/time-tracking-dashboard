@@ -379,7 +379,7 @@ select {
   .info-card {
     padding: 0;
     padding-inline: 2rem;
-    padding-top: 1rem;
+    padding: 1rem 2rem 0;
     margin-block: 1rem;
   }
 
